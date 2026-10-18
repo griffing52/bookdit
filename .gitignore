@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Environments
+.venv/
+# Local configuration; copy .env.example -> .env.
+.env
+
+# Third-party clones fetched by scripts/data/setup_libs.sh, at their pinned commits.
+libs/
+
+# Experiment output: run directories, checkpoints, generated books, score tables.
+runs/
+out/
+# Locally rendered figures.
+deliverables/
+
+# OS
+.DS_Store
+
+# Model weights are not distributed with this repository.
+*.pt
+*.pth
+*.ckpt
+*.safetensors

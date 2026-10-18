@@ -1,0 +1,82 @@
+MIT License
+
+Copyright (c) 2026 Griffin Galimi, Kang Li, Mihai Cucuringu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+SCOPE OF THE MIT LICENCE ABOVE
+================================================================================
+
+The MIT licence above covers the SOFTWARE in this repository: the source code
+and scripts (including the Painting the Market and CST baselines under
+scripts/baselines/, which are our own reimplementations from the published
+papers), the tests, the synthetic toy data under quickstart/toy_data/, and the
+metadata under artifacts/ (the corpus manifest, a list of ticker-days and
+splits, and the LOB-S5 window-start files, which hold window identifiers and
+row offsets only).
+
+It does NOT cover the two files listed in the next section.
+
+================================================================================
+LOBSTER-DERIVED STATISTICS -- CC BY-NC 4.0
+================================================================================
+
+The following files hold statistics computed from LOBSTER (Nasdaq) limit order
+book data:
+
+  - scripts/lib/intraframe_gap_profile.npz
+                                         the decoder's gap-profile quantile table
+  - assets/bookdit_overview.png          the README overview figure, whose right
+                                         panel plots aggregate evaluation
+                                         statistics
+
+Copyright (c) 2026 Griffin Galimi, Kang Li, Mihai Cucuringu
+
+These files are licensed under the Creative Commons Attribution-NonCommercial
+4.0 International licence (CC BY-NC 4.0):
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+They are released for non-commercial research and academic use only. In
+particular, they may not be used for trading, or to generate investment advice
+or trading signals. They are aggregates and plots of aggregates; they contain
+no LOBSTER order book or message records.
+
+================================================================================
+NOTE ON DATA -- NO LOBSTER DATA IS INCLUDED
+================================================================================
+
+This repository does NOT contain or redistribute any LOBSTER data. LOBSTER
+limit order book and message data is licensed by LOBSTER
+(https://lobsterdata.com) and may not be redistributed. No order book, message
+file, reconstructed order book tensor, generated sample or trained model
+weights derived from LOBSTER is included here.
+
+To run any part of this repository that reads real market data -- corpus
+construction, model training, or the official LOB-Bench evaluation -- you must
+hold your own LOBSTER subscription and obtain the data directly from LOBSTER
+(https://lobsterdata.com) under its terms. See docs/REPRODUCE.md section 1.1.
+
+================================================================================
+THIRD-PARTY COMPONENTS
+================================================================================
+
+Third-party components are not vendored here. The LOB-Bench evaluation library
+and the LOB-S5 baseline are cloned at pinned commits by
+scripts/data/setup_libs.sh and remain subject to their own licences.

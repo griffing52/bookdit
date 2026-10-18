@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+message: "If you use this software or the results it backs, please cite the paper below."
+title: "BookDiT: Reducing Autoregressive Rollout Drift in Limit Order Book World Models"
+abstract: >-
+  Reference implementation of BookDiT, a 0.95M-parameter flow-matching diffusion transformer that
+  generates limit order book states in a structured coordinate chart, so that positive spreads and
+  monotone price ladders hold by construction, and autoregressive rollout drift is reduced over
+  long horizons.
+type: software
+version: 0.1.0
+# MIT covers the code and the metadata under artifacts/. The decoder's
+# gap-profile table and the overview image are CC BY-NC 4.0; see LICENSE.
+license: MIT
+repository-code: "https://github.com/griffing52/bookdit"
+url: "https://github.com/griffing52/bookdit"
+authors:
+  - family-names: "Galimi"
+    given-names: "Griffin"
+    affiliation: "University of California, Los Angeles"
+  - family-names: "Li"
+    given-names: "Kang"
+    affiliation: "University of Oxford"
+  - family-names: "Cucuringu"
+    given-names: "Mihai"
+    affiliation: "University of California, Los Angeles; University of Oxford"
+keywords:
+  - limit order book
+  - market simulation
+  - generative model
+  - flow matching
+  - diffusion transformer
+  - world model
+  - LOB-Bench
+
+preferred-citation:
+  type: conference-paper
+  title: "BookDiT: Reducing Autoregressive Rollout Drift in Limit Order Book World Models"
+  authors:
+    - family-names: "Galimi"
+      given-names: "Griffin"
+      affiliation: "University of California, Los Angeles"
+    - family-names: "Li"
+      given-names: "Kang"
+      affiliation: "University of Oxford"
+    - family-names: "Cucuringu"
+      given-names: "Mihai"
+      affiliation: "University of California, Los Angeles; University of Oxford"
+  year: 2026
+  month: 11
+  url: "https://github.com/griffing52/bookdit"
+  collection-title: "Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26)"
+  conference:
+    name: "ACM International Conference on AI in Finance"
+    city: "Milan"
+    country: IT
+    date-start: "2026-11-14"
+    date-end: "2026-11-17"
+  publisher:
+    name: "Association for Computing Machinery"
